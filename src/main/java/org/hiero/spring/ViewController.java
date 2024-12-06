@@ -1,6 +1,5 @@
 package org.hiero.spring;
 
-import com.hedera.hashgraph.sdk.AccountId;
 import com.hedera.hashgraph.sdk.TokenId;
 import com.openelements.hiero.base.HieroContext;
 import com.openelements.hiero.base.HieroException;
@@ -33,13 +32,10 @@ public class ViewController {
 
     private final TokenId nftType;
 
-    private final AccountId operatorAccountId;
-
     @Inject
     public ViewController(@Location("index") final Template index, final NftClient nftClient, final HieroContext context) {
         this.index = index;
         this.nftClient = nftClient;
-        this.operatorAccountId = context.getOperatorAccount().accountId();
         try {
             nftType = nftClient.createNftType("Quarkus-Sample", "QS");
         } catch (HieroException e) {
