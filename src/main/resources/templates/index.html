@@ -20,6 +20,20 @@
             type="submit" formaction="/" formmethod="get">Refresh
     </button>
   </form>
+  <table class="flex-fill">
+    <tr>
+      <th>Name</th>
+      <th>Serial</th>
+      <th>Metadata</th>
+    </tr>
+    {#for nft in nfts}
+    <tr>
+      <td>{nft.name()}</td>
+      <td>{nft.serial()}</td>
+      <td>{nft.metadata()}</td>
+    </tr>
+    {/for}
+  </table>
 </div>
 </body>
 </html>
