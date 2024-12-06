@@ -32,7 +32,7 @@
     <dependency>
       <groupId>com.open-elements.hiero</groupId>
       <artifactId>hiero-enterprise-microprofile</artifactId>
-      <version>0.14.0</version>
+      <version>0.15.0</version>
     </dependency>
     <dependency>
       <groupId>io.grpc</groupId>
@@ -42,6 +42,16 @@
     <dependency>
       <groupId>io.grpc</groupId>
       <artifactId>grpc-inprocess</artifactId>
+      <version>1.58.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-core</artifactId>
+      <version>1.58.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-api</artifactId>
       <version>1.58.0</version>
     </dependency>
   </dependencies>
