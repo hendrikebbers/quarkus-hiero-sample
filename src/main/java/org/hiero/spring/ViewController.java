@@ -63,7 +63,7 @@ public class ViewController {
     }
 
     private Set<Nft> getAllNfts() throws HieroException {
-        //TODO: NftRepository implemenetation for Microprofile is missing
+        //TODO: NftRepository implementation for Microprofile is missing
         return Set.of();
     }
 
