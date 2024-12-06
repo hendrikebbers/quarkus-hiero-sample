@@ -16,20 +16,16 @@ import jakarta.ws.rs.core.MediaType;
 @Path("/")
 public class ViewController {
 
-    private final Template index;
-
-    private final HieroContext hieroContext;
+    @Inject
+    private Template index;
 
     @Inject
-    public ViewController(Template index, HieroContext hieroContext)
-            throws HieroException {
-        this.index = index;
-        this.hieroContext = hieroContext;
-    }
+    private HieroContext hieroContext;
 
     @GET
     @Produces(MediaType.TEXT_HTML)
     public TemplateInstance index() {
+        System.out.println(hieroContext.getOperatorAccount());
         return index.instance();
     }
 }
