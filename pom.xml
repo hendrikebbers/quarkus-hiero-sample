@@ -32,7 +32,7 @@
     <dependency>
       <groupId>com.open-elements.hiero</groupId>
       <artifactId>hiero-enterprise-microprofile</artifactId>
-      <version>0.15.0</version>
+      <version>0.18.0</version>
     </dependency>
     <dependency>
       <groupId>io.grpc</groupId>
@@ -61,6 +61,7 @@
     <plugin>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-maven-plugin</artifactId>
+      <version>3.17.2</version>
       <extensions>true</extensions>
       <executions>
         <execution>
